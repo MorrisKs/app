@@ -8,6 +8,14 @@ import {
     ScrollView,
     FlatList
 } from 'react-native';
+{
+    "expo"; {
+      "jsEngine"; "hermes",
+      "ios"; {
+        "jsEngine"; "jsc"
+      }
+    }
+  }
 
 import { COLORS, FONTS, SIZES, icons, images } from '../constants';
 
@@ -94,19 +102,19 @@ const Home = ({ navigation }) => {
     }
     const myBooksData = [
         {
-            ...bookOtherWordsForHome,
+            ...ReactNative,
             completion: "75%",
             lastRead: "3d 5h",
 
         },
         {
-            ...bookTheMetropolis,
+            ...JavaScript,
             completion: "23%",
             lastRead: "10d 5h",
 
         },
         {
-            ...bookTheTinyDragon,
+            ...HTML,
             completion: "10%",
             lastRead: "1d 2h",
 
@@ -275,7 +283,7 @@ const Home = ({ navigation }) => {
                         marginLeft: index == 0 ? SIZES.padding : 0,
                         marginRight: SIZES.radius
                     }}
-                    onPress={() => navigation.navigate("BookDetail", {
+                    onPress={() => navigation.navigate("BookDetial", {
                         book: item
                     })}
                 >
